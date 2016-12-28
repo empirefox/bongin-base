@@ -1,0 +1,15 @@
+{
+  "name": "bongin-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/swiper": "^2.0.31"
+  }
+}
