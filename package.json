@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/swiper": "^2.0.31"
+    "@types/swiper": "^2.0.31",
+    "codelyzer": "^2.0.0-beta.4"
   },
   "dependencies": {}
 }
