@@ -3,7 +3,7 @@ export interface Masonry {
   sectionclass?: string;
   columnWidth?: number;
   gutter?: number;
+  vgutter?: string;
   transitionDuration?: string;
   resize?: boolean;
-  vgutter?: string;
 }

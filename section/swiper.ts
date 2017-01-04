@@ -1,9 +1,9 @@
 export interface Swiper {
   slidesPerView?: number;
-  loop?: boolean;
+  spaceBetween?: number;
   autoplay?: number;
   autoplayDisableOnInteraction?: boolean;
-  spaceBetween?: number;
+  loop?: boolean;
   paging?: boolean;
   arrows?: boolean;
 }

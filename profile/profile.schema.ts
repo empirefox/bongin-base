@@ -25,10 +25,10 @@ export const ProfileSchema = {
     'detail',
     'keywords',
     'addr',
-    { title: 'logo', type: 'img' },
-    { title: 'ico16', type: 'img' },
-    { title: 'ico32', type: 'img' },
-    { title: 'ico64', type: 'img' },
+    { key: 'logo', type: 'img' },
+    { key: 'ico16', type: 'img' },
+    { key: 'ico32', type: 'img' },
+    { key: 'ico64', type: 'img' },
     { type: 'submit', style: 'btn-info', title: 'OK' }
   ]
 };

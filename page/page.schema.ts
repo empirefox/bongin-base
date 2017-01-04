@@ -4,6 +4,7 @@ export const PageSchema = {
     type: 'object',
     properties: {
       id: { title: 'id', type: 'string', readonly: true },
+      slug: { title: 'slug', type: 'string' },
       detail: { title: '描述(head标签)', type: 'string' },
       showside: { title: '显示侧栏', type: 'boolean' },
       bg: { title: '背景', type: 'string' },
@@ -12,6 +13,7 @@ export const PageSchema = {
   },
   form: [
     'id',
+    'slug',
     'detail',
     'showside',
     { "key": "bg", "type": "bg" },

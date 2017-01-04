@@ -4,20 +4,20 @@ import { Carousel } from './carousel';
 import { Swiper } from './swiper';
 
 export interface ISection {
-  id?: string;
   title?: string;
   detail?: string;
   cols: number;
-  pattern?: string;
   bg?: string;
   hfull?: boolean;
   sideshow?: boolean;
 
   panels?: IPanel[];
 
+  pattern?: string;
   Carousel?: Carousel;
   Masonry?: Masonry;
   Swiper?: Swiper;
 
+  id: string;
   template: string;
 }
