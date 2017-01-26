@@ -1,20 +1,20 @@
-export interface IRoot {
+export interface IFbRoot {
   key: string;
   name: string;
 }
 
-export interface IOperator {
+export interface IFbOperator {
   key: string;
   name: string;
 }
 
-export interface IUser {
+export interface IFbUser {
   $key?: string;
   email: string;
   phone?: string;
 }
 
-export interface ISiteBase {
+export interface IFbSiteBase {
   $key?: string;
   uid: string;
   mainCdn: string;
