@@ -16,3 +16,12 @@ export interface IProfile extends ISite {
 
   nav?: INav;
 }
+
+// default one?
+export function defaultProfile(site: ISite): IProfile {
+  return <IProfile>{
+    themeUrl: 'https://',
+    title: site.Domain,
+  };
+}
+// assign?

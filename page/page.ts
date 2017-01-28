@@ -4,7 +4,7 @@ import { ISidenav, Sidenav } from '../sidenav';
 import { IHeader } from './header';
 
 export interface IPage extends INavItem {
-  id: string; // generated, ro
+  id: number; // generated, ro
   slug?: string; // computed
   detail?: string; // in head tag
   showside?: boolean;
