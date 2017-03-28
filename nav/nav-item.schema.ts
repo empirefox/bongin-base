@@ -3,18 +3,18 @@ export const NavItemSchema = {
     title: '菜单项',
     type: 'object',
     properties: {
-      id: { title: 'id', type: 'string', readonly: true },
       name: { title: '菜单名', type: 'string' },
       icon: { title: '图标', type: 'string' },
       navshow: { title: '显示', type: 'boolean' },
+      slug: { title: 'slug', type: 'string' },
     },
     required: ['id', 'name'],
   },
   form: [
-    'id',
     'name',
     'icon',
     'navshow',
+    'slug',
     { type: 'submit', style: 'btn-info', title: 'OK' }
   ]
 };

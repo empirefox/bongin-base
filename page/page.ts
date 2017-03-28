@@ -3,9 +3,7 @@ import { ISection } from '../section';
 import { ISidenav, Sidenav } from '../sidenav';
 import { IHeader } from './header';
 
-export interface IPage extends INavItem {
-  id: number; // generated, ro
-  slug?: string; // computed
+export interface IPage {
   detail?: string; // in head tag
   showside?: boolean;
   bg?: string;
@@ -20,3 +18,5 @@ export interface IPage extends INavItem {
 
   sections?: ISection[];
 }
+
+export interface INavPage extends IPage, INavItem { }

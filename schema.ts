@@ -2,6 +2,9 @@ import { CarouselSchema } from './section/carousel.schema';
 import { MasonrySchema } from './section/masonry.schema';
 import { SwiperSchema } from './section/swiper.schema';
 
+export { SiteSchema } from './profile/site.schema';
+export { resourceSchema } from './profile/resource.schema';
+
 export { NavSchema } from './nav/nav.schema';
 export { NavItemSchema } from './nav/nav-item.schema';
 export { HeaderSchema } from './page/header.schema';

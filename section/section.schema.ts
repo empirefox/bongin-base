@@ -1,3 +1,5 @@
+import { sectionPattern } from '../share';
+
 export const SectionSchema = {
   schema: {
     title: '区块',
@@ -9,6 +11,7 @@ export const SectionSchema = {
       bg: { title: '背景', type: 'string' },
       hfull: { title: '横向满屏', type: 'boolean' },
       sideshow: { title: '显示侧栏', type: 'boolean' },
+      pattern: { title: '类型', type: 'string', enum: [...sectionPattern] },
     },
   },
   form: [
@@ -18,6 +21,14 @@ export const SectionSchema = {
     { key: 'bg', type: 'bg' },
     'hfull',
     'sideshow',
+    {
+      key: 'pattern', type: 'radios',
+      titleMap: {
+        Plain: '普通',
+        Swiper: '轮播',
+        Masonry: '瀑布流',
+      },
+    },
     { type: 'submit', style: 'btn-info', title: 'OK' }
   ]
 };

@@ -88,7 +88,7 @@ export const panelPattern = [
 export const faColor = mpanelType;
 
 export const sectionPattern = [
-  'Plain', 'Carousel', 'Masonry',
+  'Plain', 'Swiper', 'Masonry',
 ];
 
 export const sideType = [
