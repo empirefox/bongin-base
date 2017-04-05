@@ -11,17 +11,17 @@ export interface ISite {
 
 export class SiteMethods {
 
-  constructor(private site: ISite) { }
+  constructor(private site: ISite, private ext = '') { }
 
   profile(): string {
     // http://cdn.a.com/s/1/f/sdfwer
-    return `${this.cdn()}s/${this.site.ID}/f/${this.site.ProfileHash}`;
+    return `${this.cdn()}s/${this.site.ID}/f/${this.site.ProfileHash}${this.ext}`;
   }
 
   // INavItem
   page({ hash }: { hash: string }): string {
     // http://cdn.a.com/s/1/p/sdfwer
-    return `${this.cdn()}s/${this.site.ID}/p/${hash}`;
+    return `${this.cdn()}s/${this.site.ID}/p/${hash}${this.ext}`;
   }
 
   cdn() {
